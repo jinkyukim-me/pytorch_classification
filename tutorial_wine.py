@@ -13,3 +13,5 @@ import pandas as pd
 # 와인 데이터 읽어 들이기
 wine = load_wine()
 wine
+#데이터프레임에 담긴 설명변수 출력
+pd.DataFrame(wine.data, columns=wine.feature_names)
